@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<link rel="stylesheet" href="mobiscroll-2.0.1.custom.min.css"/>
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script> 
+<script src="iscroll.js"></script>
+<script src="jquery.mobile.iscroll.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<script src="teamdotamob.js"></script>
+<script src="mobiscroll-2.0.1.custom.min.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body>
+<div data-role="page" id="todoslist_list" data-iscroll="disable">
+<div data-role="header" data-theme="b" >
+    <h1 id="todoslist_page_title"></h1>
+	<a href="javascript:back_todos_list();void(0);" data-icon="arrow-l">返回</a>
+	<a href="todoslist_add_page.html" data-icon="add" >添加</a>
+</div>
+<div data-role="content">
+	<div>
+		<div id="todoslist_page_refresh" onclick="todoslist_refresh();void(0);">点击刷新待办事宜详情</div>
+		<ul id="todoslist_list_ul" data-role="listview" >
+			<center><img src="images/loading.gif"/></center>
+		</ul>
+	</div>
+	<div id="todos_content_comment_form">
+		<form  id="fcform">
+			<div data-role="fieldcontain">
+				<textarea name="comment_text" id="comment_text" class="m-input"></textarea>
+				<a href="javascript:send_todos_comment();void(0)" data-role="button" data-theme="e">添加新评论</a>
+			</div>
+		</form>
+		<ul id="todos_comment_list" data-role="listview" data-inset="true"></ul>
+	</div>
+</div>
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a data-iconpos="top"  href="javascript:goto('discussion_list');void(0);">交流区</a></li>
+			<li><a data-iconpos="top"  href="javascript:goto('todos_list');void(0);" class="ui-btn-active ui-state-persist">待办事宜</a></li>
+			<li><a data-iconpos="top"  href="javascript:goto('attachment_list');void(0);" >附件区</a></li>
+			<li><a data-iconpos="top"  href="javascript:goto('document_list');void(0);">文档区</a></li>
+		</ul>
+	</div>
+</div>
+<script id="todoslist_list_temp" type="text/html">
+<li><a href="javascript:todoslist_content(${todoslistid},${post_num});">${subject}&nbsp;<span class="time">{{if assign_author}}${assign_author}{{/if}} {{if due_date != 0}}${due_date}{{/if}}</span>
+{{if post_num > 0}}<span class="ui-li-count" >${post_num}</span>{{/if}}</a>
+</li>
+</script>
+<script id="todos_comment_list_temp" type="text/html">
+<li class="formatted_content">${author}&nbsp;:&nbsp;{{html message}}&nbsp;<span class="time">${timeline_format}</span>
+</li>
+</script>
+<script>
+$('#todoslist_list').live( 'pagebeforeshow',function(event)
+{
+	$('#todoslist_page_title').html( window.localStorage.getItem( 'todosname' ) );
+	show_local_todoslist();
+	show_todos_comment( window.localStorage.getItem( 'todosid' ) );
+});</script>
+</div>
+</body>
+</html>

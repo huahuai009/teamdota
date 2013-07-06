@@ -1,0 +1,58 @@
+body{
+	margin:0; 
+	padding:0;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,sans-serif;
+    font-size: 12px;
+	color:#000000;
+	width:1000px;
+}
+a{
+	color:#0071c7;
+	cursor:pointer;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img, p{
+	border:0;
+	padding:0;
+	margin:0;
+}
+a, img, div, ul, li, form, span, input{
+	padding:0;
+	margin:0;
+}
+.clear{
+	clear:both;
+}
+#MAIN{
+	width:960px;
+	height:auto !important;
+	margin:0 auto;
+	position:relative;
+}
+#MAIN .middle_bg{
+	width:920px;
+	float:left; 
+	padding-top:30px;
+	position:relative;
+}
+.clause_main{
+	width:900px; 
+	margin:0 auto; 
+	line-height:20px;
+	position:relative;
+}
+.clause_main pre{
+	padding:10px;
+}
+pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script> 
+<script src="iscroll.js"></script>
+<script src="jquery.mobile.iscroll.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<script src="teamdotamob.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body> 
+<div data-role="page" id="home_list" data-iscroll="disable">
+<div data-role="header" data-theme="b">
+   <h1>项目</h1>
+	<a href="javascript:logout();void(0);" data-icon="arrow-l" data-direction="reverse">登出</a>
+	<a href="javascript:project_refresh();void(0);" data-icon="refresh" data-transition="fade" >刷新</a>
+ </div>
+ 
+<div data-role="content">
+	<ul id="home_list_ul" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+	<center><img src="images/loading.gif"/></center>
+	</ul>
+	<center>
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="javascript:clean();void(0);" data-role="button" data-icon="delete">清缓存</a>
+			<a href="#" data-role="button" data-icon="gear">设置</a>
+		</div>
+	</center>
+</div>
+<!--<div data-role="footer" data-id="foo1" data-position="fixed" >
+	<div data-role="navbar">
+		<ul>
+			<li><a data-iconpos="top"  data-icon="home"  href="javascript:goto('home_list');void(0);" class="ui-btn-active ui-state-persist">项目</a></li>
+			<li><a data-iconpos="top" data-icon="grid" href="#">成员</a></li>
+			<li><a data-iconpos="top" data-icon="star" href="#">个人中心</a></li>
+			
+		</ul>
+	</div>
+</div>-->
+<script id="home_list_temp" type="text/html">
+<li data-role="list-divider">${name}</li>
+<li><a href="javascript:change_project(${id} , '${name}' , 'discussion');void(0);">交流区</a></li>
+<li><a href="javascript:change_project(${id} , '${name}' , 'todo');void(0);">待办事宜</a></li>
+<li><a href="javascript:change_project(${id} , '${name}' , 'attachment');void(0);">附件区</a></li>
+<li><a href="javascript:change_project(${id} , '${name}' , 'document');void(0);">文档区</a></li>
+</script>
+
+<script>
+$('#home_list').live( 'pagebeforeshow',function(event) {
+	show_local_project();
+});</script>
+
+</div>
+</body>
+</html>

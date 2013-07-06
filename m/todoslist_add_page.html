@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<link rel="stylesheet" href="mobiscroll-2.0.1.custom.min.css"/>
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script>
+<script src="teamdotamob.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<script src="mobiscroll-2.0.1.custom.min.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body> 
+<div data-role="page" id="todoslist_add_page">
+<div data-role="header" data-theme="b">
+    <h1 id="todoslist_add_page_title"></h1>
+	<a href="javascript:goto('todoslist_list' , 1 );void(0);" data-icon="arrow-l">取消</a>
+</div>
+<div data-role="content">
+	<form id="addform">
+		<div data-role="fieldcontain">
+			<p>添加待办事宜详情</p>
+			<textarea name="subject" id="subject" class="m-input" placeholder="内容..." ></textarea>
+			<input id="todo_due_at" name="todo_due_at" class="m-input" placeholder="预计完成时间..." style="margin:15px 0;" />
+			<select name="todo_assignee_code" id="todo_assignee_code" data-native-menu="false">
+				<option value="">分配该待办事宜给:</option>
+			</select>
+			<a href="javascript:add_todoslist();void(0)" data-role="button" data-theme="e">保存</a>
+		</div>
+	</form>
+</div>
+<script>
+$('#todoslist_add_page').live( 'pagebeforeshow',function(event)
+{
+	$('#todoslist_add_page_title').html( window.localStorage.getItem( 'todosname' ) );
+	show_project_memeber();
+});
+$(function(){
+    $('#todo_due_at').scroller({
+        preset: 'date',
+        theme: 'jqm',
+        display: 'modal',
+        mode: 'scroller',
+		dateFormat: 'yy-mm-dd'
+    });
+});
+</script>
+</div>
+</body>
+</html>

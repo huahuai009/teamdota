@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script>
+<script src="teamdotamob.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body> 
+<div data-role="page" id="document_content">
+<div data-role="header" data-theme="b">
+    <h1 id="content_page_title"></h1>
+	<a href="javascript:back_document_list();" data-icon="arrow-l" data-direction="reverse">全部文档</a>
+</div>
+<div data-role="content">
+	<div id="document_content_text"></div>
+	<div id="document_content_comment_form">
+		<form  id="fcform">
+			<div data-role="fieldcontain">
+				<textarea name="comment_text" id="comment_text" class="m-input"></textarea>
+				<a href="javascript:send_document_comment();void(0)" data-role="button" data-theme="e">添加新评论</a>
+			</div>
+		</form>
+		<ul id="document_comment_list" data-role="listview" data-inset="true"></ul>
+	</div>
+</div>
+<script id="document_content_text_temp" type="text/html">
+<span><strong>${subject}</strong></span><br/>
+<span class="time">作者：${author}，${timeline_format}</span>
+<div class="formatted_content">{{html message}}</div>
+</script>
+<script id="document_comment_list_temp" type="text/html">
+<li class="formatted_content">${author}&nbsp;:&nbsp;{{html message}}&nbsp;<span class="time">${timeline_format}</span>
+</li>
+</script>
+<script>
+$('#document_content').live( 'pagebeforeshow',function(event)
+{
+	$('#content_page_title').html( '文档详情' );
+	show_document_content( window.localStorage.getItem( 'documentid' ) );
+	show_document_comment( window.localStorage.getItem( 'documentid' ) );
+});
+</script>
+</div>
+</body>
+</html>

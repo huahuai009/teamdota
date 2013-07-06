@@ -1,0 +1,24 @@
+section.signup_strip input[type="submit"]{
+	width: 100px;
+}
+
+span.placeholder_wrapper label.placeholder_label {
+	top: 10px;
+	width: 150px;
+}
+
+nav.paginate a.next {
+	width: 270px;
+}
+
+body.home nav.paginate a.next {
+	width: 250px;
+}
+
+body.signup section.packages2 {
+	height: auto;
+}
+
+body.signup section.signup span.placeholder_wrapper label.placeholder_label {
+	top: 10px;
+}

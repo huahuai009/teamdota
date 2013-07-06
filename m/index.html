@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script>
+<script src="teamdotamob.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body> 
+ 
+<!-- login screen -->
+<div data-role="page" id="login">
+<div data-role="content">
+	<center><img src="images/logo.png"/></center>
+	<form action="javascript:teamdota_login();" method="post">
+	<div data-role="fieldcontain"> 
+	         <label for="email">电子邮箱</label> 
+	         <input type="text" name="email" id="email" value=""  placeholder="example@teamdota.com" /> 
+	</div> 
+	
+	<div data-role="fieldcontain"> 
+	         <label for="password">登录密码</label> 
+	         <input type="password" name="password" id="password" value="" placeholder="******" /> 
+	</div> 
+	
+	<div data-role="fieldcontain" id="login_btn"> 
+		<button type="submit" data-theme="e" >登入Teamdota</button>
+	</div> 
+	
+	<div data-role="fieldcontain" >  
+		请用电脑访问 http://teamdota.com 创建账号
+	</div> 
+	</form>
+	
+</div>
+ 
+
+<div data-role="footer" data-position="fixed" data-id="foo1" >
+
+</div><!-- /footer -->
+<script>
+$('#login').live( 'pagebeforeshow',function(event)
+{
+	if( window.localStorage.getItem('token') ) goto("home_list");
+	
+});
+</script>
+
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>

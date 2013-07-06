@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script>
+<script src="teamdotamob.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body> 
+<div data-role="page" id="todoslist_content">
+<div data-role="header" data-theme="b">
+    <h1 id="content_page_title"></h1>
+	<a href="javascript:back_todoslist_list();" data-icon="arrow-l" data-direction="reverse">返回</a>
+</div>
+<div data-role="content">
+	<div id="todoslist_content_text"></div>
+	<div id="todoslist_content_comment_form">
+		<form  id="fcform">
+			<div data-role="fieldcontain">
+				<textarea name="comment_text" id="comment_text" class="m-input"></textarea>
+				<a href="javascript:send_todoslist_comment();void(0)" data-role="button" data-theme="e">添加新评论</a>
+			</div>
+		</form>
+		<ul id="todoslist_comment_list" data-role="listview" data-inset="true"></ul>
+	</div>
+</div>
+<script id="todoslist_content_text_temp" type="text/html">
+<h4>${subject}</h4> 
+<span class="time">{{if assign_author}}分配：${assign_author}{{/if}}　{{if due_date != 0}}时间：${due_date}{{/if}}</span>
+</script>
+<script id="todoslist_comment_list_temp" type="text/html">
+<li class="formatted_content">${author}&nbsp;:&nbsp;{{html message}}&nbsp;<span class="time">${timeline_format}</span>
+</li>
+</script>
+<script>
+$('#todoslist_content').live( 'pagebeforeshow',function(event)
+{
+	$('#content_page_title').html( '待办事宜详情' );
+	show_todoslist_content( window.localStorage.getItem( 'todoslistid' ) );
+	show_todoslist_comment( window.localStorage.getItem( 'todoslistid' ) );
+});
+</script>
+</div>
+</body>
+</html>

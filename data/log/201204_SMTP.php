@@ -1,0 +1,11 @@
+<?PHP exit;?>	2012-04-28 14:42:51		127.0.0.1	6	/do.php?ac=sendmail	(http://smtp.126.com:25) CONNECT - Unable to connect to the SMTP server
+<?PHP exit;?>	2012-04-28 14:44:10		127.0.0.1	6	/do.php?ac=sendmail	(smtp.126.com:25) MAIL FROM - 550 Invalid User 1f1cf3ce-4646-4de1-86f9-0a354b5e699b
+<?PHP exit;?>	2012-04-28 14:54:03		127.0.0.1	6	/do.php?ac=sendmail	(smtp.126.com:25) MAIL FROM - 550 Invalid User 72c3c9e2-1dbc-468f-a786-fb0fe9abe7e8
+<?PHP exit;?>	2012-04-28 14:55:39		127.0.0.1	6	/do.php?ac=sendmail	pop.126.com:110 CONNECT - +OK Welcome to coremail Mail Pop3 Server (126coms[b1b9eb22167fb29b9b6d529a092eb25bs])
+<?PHP exit;?>	2012-04-28 14:57:32		127.0.0.1	6	/do.php?ac=sendmail	(smtp.126.com:25) MAIL FROM - 550 Invalid User a56df5b2-2284-419f-ac49-7fed62121903
+<?PHP exit;?>	2012-04-28 15:00:41		127.0.0.1	6	/do.php?ac=sendmail	(smtp.126.com:25) MAIL FROM - 550 Invalid User ba5f1fd9-a1fa-4aa6-a102-af2100200195
+<?PHP exit;?>	2012-04-28 15:02:18		127.0.0.1	6	/do.php?ac=sendmail	(smtp.163.com:25) MAIL FROM - 550 Invalid User 1b8db29e-aa31-4d38-ad79-781b345c7378
+<?PHP exit;?>	2012-04-28 15:03:56		127.0.0.1	6	/do.php?ac=sendmail	(192.168.0.10:25) RCPT TO - 504 5.5.2 <uchome>: Helo command rejected: need fully-qualified hostname
+<?PHP exit;?>	2012-04-28 15:04:41		127.0.0.1	6	/do.php?ac=sendmail	(192.168.0.10:25) RCPT TO - 504 5.5.2 <teamdota>: Helo command rejected: need fully-qualified hostname
+<?PHP exit;?>	2012-04-28 15:05:59		127.0.0.1	6	/do.php?ac=sendmail	(smtp.wooduan.com:25) CONNECT - Unable to connect to the SMTP server
+<?PHP exit;?>	2012-04-28 15:14:21		127.0.0.1	6	/do.php?ac=sendmail	(smtp.126.com:25) MAIL FROM - 550 Invalid User dbc4d7dc-8c84-48bc-a6b4-74659a769f49

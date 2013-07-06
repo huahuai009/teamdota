@@ -1,0 +1,613 @@
+BODY.identifications {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: #e5e5e5; PADDING-BOTTOM: 0px; MARGIN: 0px auto; COLOR: #222; PADDING-TOP: 0px; FONT-FAMILY: "宋体", verdana, arial, helvetica, sans-serif; TEXT-ALIGN: center
+}
+BODY.identifications A {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-DECORATION: underline
+}
+BODY.identifications A:link {
+	COLOR: #03c
+}
+BODY.identifications A:visited {
+	COLOR: #03c
+}
+BODY.identifications A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #03b; TEXT-DECORATION: none
+}
+BODY.identifications A IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+BODY.identifications TABLE {
+	BORDER-COLLAPSE: collapse
+}
+BODY.identifications P {
+	FONT-SIZE: 12px; MARGIN: 0px 0px 15px; COLOR: #333; LINE-HEIGHT: 1.4em
+}
+BODY.identifications DIV.logo {
+	PADDING-BOTTOM: 20px; TEXT-ALIGN: center
+}
+BODY.identifications DIV.logo IMG {
+	max-width: 300px
+}
+BODY.identifications DIV.logo IMG.padded {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #fff; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+BODY.identifications H1 {
+	MARGIN-BOTTOM: 5px
+}
+H2 {
+	MARGIN-BOTTOM: 5px
+}
+BODY.identifications H1 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 1.4em
+}
+BODY.new DIV.page_header P {
+	MARGIN-TOP: 7px; MARGIN-BOTTOM: 7px
+}
+BODY.identifications H1.index {
+	MARGIN: 0px
+}
+BODY.identifications H2 {
+	FONT-SIZE: 12px; MARGIN: 14px 0px 0px
+}
+BODY.identifications H3 {
+	FONT-SIZE: 12px; MARGIN: 0px 0px 2px
+}
+BODY.identifications DIV.wrapper {
+	PADDING-RIGHT: 23px; PADDING-LEFT: 30px; 
+	BACKGROUND: #e5e5e5; 
+	PADDING-BOTTOM: 20px; MARGIN: 0px auto; PADDING-TOP: 120px; min-width: 700px
+}
+BODY.identifications DIV.container {
+	MARGIN: 0px auto; WIDTH: 500px; TEXT-ALIGN: left
+}
+BODY.new DIV.container {
+	WIDTH: 640px
+}
+BODY.identifications .col {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: left; webkit-border-radius: 10px; moz-border-radius: 10px; border-radius: 10px; moz-box-shadow: 0 0 6px #999; webkit-box-shadow: 0 0 6px #999; box-shadow: 0 0 6px #999
+}
+BODY.identifications:unknown .col {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+BODY.identifications .innercol {
+	PADDING-RIGHT: 50px; PADDING-LEFT: 40px; PADDING-BOTTOM: 20px; PADDING-TOP: 15px
+}
+
+DIV.banner H1 {
+	MARGIN-TOP: 15px; FONT-SIZE: 14px;color: #CC0000;
+}
+DIV.banner P {
+	FONT-SIZE: 12px; MARGIN: 0px 0px 24px; COLOR: #666; LINE-HEIGHT: 1.3
+}
+DIV.banner div.chkdiv {
+	TEXT-ALIGN: center; LINE-HEIGHT: 26px;WIDTH: 350px; FONT-SIZE: 12px; margin:-10px auto 10px;
+	padding:3px 0;
+	color:#f00;
+	background:#fedfe7;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px
+}
+BODY.identifications DIV.banner P STRONG {
+	COLOR: #000
+}
+
+BODY.identifications FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY.identifications INPUT {
+	FONT-SIZE: 12px
+}
+BODY.identifications INPUT.submit {
+	cursor:pointer;FONT-SIZE: 12px; WIDTH: auto; COLOR: #000
+}
+
+BODY.identifications DIV.footer {
+	FONT-SIZE: 12px; MARGIN-BOTTOM: 20px
+}
+BODY.identifications DIV.footer A {
+	COLOR: #222
+}
+BODY.identifications DIV.footer A:hover {
+	BACKGROUND: #666; COLOR: #fff
+}
+BODY.identifications DIV.pick P {
+	COLOR: #999
+}
+BODY.identifications DIV.pick P.hint A {
+	COLOR: #888
+}
+BODY.identifications DIV.pick P.hint A:hover {
+	BACKGROUND: #666; COLOR: #fff
+}
+BODY.identifications DIV.pick INPUT.submit {
+	background-color: #339933;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    cursor: pointer;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 10px;
+    width: 80px;
+}
+BODY.identifications DIV.errors H2 {
+	FONT-SIZE: 12px; COLOR: #f00
+}
+BODY.identifications DIV.errors UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 20px; PADDING-TOP: 0px
+}
+BODY.identifications DIV.errors LI {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 5px; MARGIN: 0px 0px 2px; COLOR: #f00; PADDING-TOP: 5px; LIST-STYLE-TYPE: none
+}
+BODY.identifications DIV.pick DIV.error {
+	MARGIN: 0px 0px 20px
+}
+BODY.identifications DIV.pick DIV.error P {
+	FONT-SIZE: 12px; COLOR: #900
+}
+
+BODY.identifications DIV.pick DIV.error LI {
+	FONT-SIZE: 12px
+}
+BODY.identifications DIV.pick UL {
+	PADDING-LEFT: 20px; MARGIN: 0px
+}
+BODY.identifications DIV.pick LI {
+	FONT-SIZE: 12px
+}
+BODY.identifications DIV.pick H2 SPAN {
+	FONT-WEIGHT: normal; FONT-SIZE: 90%; COLOR: #666
+}
+
+BODY.identifications DIV.product_match {
+	MARGIN: 20px 0px
+}
+BODY.identifications DIV.product_match UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+BODY.identifications DIV.product_match LI {
+	MARGIN-BOTTOM: 10px
+}
+BODY.identifications DIV.banner {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 40px; PADDING-BOTTOM: 10px; PADDING-TOP: 18px
+}
+
+BODY.identifications DIV.submit P {
+	FONT-SIZE: 12px
+}
+BODY.identifications DIV.submit P A {
+	COLOR: #666
+}
+BODY.identifications DIV.submit P A:hover {
+	BACKGROUND: #666; COLOR: #fff
+}
+BODY.rsvp DIV#affected_accounts {
+	MARGIN-BOTTOM: 24px
+}
+
+BODY.simple_form DIV.container {
+	WIDTH: 460px
+}
+BODY.simple_form DIV.banner {
+	TEXT-ALIGN: center
+}
+BODY.rsvp DIV.banner H1 {
+	MARGIN-BOTTOM: 10px; LINE-HEIGHT: 1.2em
+}
+BODY.simple_form DIV.pick {
+	MARGIN: 0px auto; WIDTH: 360px; TEXT-ALIGN: center
+}
+BODY.simple_form DIV.validated_field {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 4px; MARGIN: 0px; PADDING-TOP: 4px
+}
+BODY.simple_form DIV.invalid {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px -5px 3px; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+BODY.simple_form DIV.invalid P.error {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 0px
+}
+BODY.simple_form DIV.invalid DIV.username_suggestions {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+BODY.simple_form DIV.pick DIV.validated_field H2 {
+	FONT-SIZE: 12px
+}
+BODY.simple_form DIV.submit {
+	MARGIN-TOP: 20px
+}
+
+BODY.simple_form DIV.pick TD {
+	VERTICAL-ALIGN: top
+}
+BODY.simple_form DIV.pick TD.first_name {
+	PADDING-RIGHT: 3px
+}
+BODY.simple_form DIV.pick TD.last_name {
+	PADDING-LEFT: 3px
+}
+BODY.identifications DIV.pick DIV.remember_container {
+	text-align: center;
+	color: #333333;
+    font-size: 12px;
+    MARGIN: 0px;
+}
+BODY.identifications DIV.pick DIV.remember_container  A{
+    MARGIN-left: 20px;
+}
+BODY.identifications DIV.pick DIV.validated_field H2 {
+	FONT-SIZE: 12px; COLOR: #000
+}
+BODY.identity_validation DIV.validated_field {
+	DISPLAY: inline-block; MARGIN: -5px -10px 10px
+}
+BODY.identity_validation TABLE DIV.validated_field {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 8px; PADDING-BOTTOM: 5px; MARGIN: -5px -10px 10px; PADDING-TOP: 7px
+}
+BODY.identity_validation TABLE DIV.locale {
+	MARGIN: 0px -10px
+}
+
+BODY.identity_validation DIV.validated_field P {
+	MARGIN: 0px
+}
+BODY.identity_validation DIV.validated_field H2 {
+	MARGIN: 0px
+}
+BODY.identity_validation DIV.validated_field P.hint {
+	MARGIN: 0px
+}
+BODY.identity_validation DIV.validated_field P.field {
+	MARGIN: 0px
+}
+BODY.identity_validation DIV.validated_field P.field {
+	PADDING-RIGHT: 40px; DISPLAY: inline-block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+BODY.identity_validation DIV.validated_field P.hint {
+	MARGIN-TOP: 5px; FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 1.1em
+}
+BODY.identity_validation DIV.validated_field P.error {
+	MARGIN-TOP: 5px; FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 1.1em
+}
+BODY.identity_validation DIV.validated_field P.error {
+	DISPLAY: none; COLOR: #f00
+}
+BODY.identity_validation DIV.validated_field.invalid p.error{
+	display:block
+}
+BODY.simple_form DIV.time_zone {
+	MARGIN: 0px 0px 15px
+}
+BODY.identity_validation DIV.time_zone {
+	MARGIN: 15px 0px 0px
+}
+BODY.identity_validation DIV.time_zone P {
+	FONT-SIZE: 12px; COLOR: #666; TEXT-ALIGN: left
+}
+BODY.simple_form DIV.time_zone P {
+	FONT-SIZE: 12px; COLOR: #666; TEXT-ALIGN: left
+}
+BODY.identity_validation DIV.time_zone SELECT {
+	MARGIN-TOP: 5px; FONT-SIZE: larger; WIDTH: 100%
+}
+BODY.simple_form DIV.time_zone SELECT {
+	MARGIN-TOP: 5px; FONT-SIZE: larger; WIDTH: 100%
+}
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 30px; PADDING-TOP: 30px; FONT-FAMILY: "宋体", verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #e5e5e5
+}
+P {
+	MARGIN: 0px 0px 5px
+}
+
+DIV.action INPUT {
+	FONT-SIZE: 12px
+}
+DIV.wrapper {
+	PADDING-RIGHT: 23px; PADDING-LEFT: 30px; BACKGROUND: #e5e5e5; PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-TOP: 12px; min-width: 800px
+}
+DIV.container {
+	MARGIN: 0px auto; TEXT-ALIGN: center
+}
+.col {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+BODY.simple_form div.pick input[type=text],BODY.simple_form div.pick input[type=password]{
+	-webkit-appearance:none;line-height:1.0em;border:1px solid #d9d9d9;background-color:white;padding:8px 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;font-weight:normal;font-size:12px;width:328px
+}
+BODY.simple_form div.validated_field.invalid{
+	padding:5px;margin:0 -5px 3px -5px;text-align:left
+}
+BODY.identity_validation div.validated_field.invalid{
+	background:#fedfe7;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px
+}
+/*-------------------------------------------------
+Edit Identity
+-------------------------------------------------*/
+
+body.edit_identity div#container {
+  text-align: left;
+  width: 510px;
+}
+
+body.edit_identity div#main {
+  float: left;
+}
+
+body.edit_identity input {
+  font-family: "宋体", verdana, arial, helvetica, sans-serif !important;
+}
+
+body.edit_identity label {
+  font-size: 12px !important;
+}
+body.edit_identity {
+  font-family: "宋体", verdana, arial, helvetica, sans-serif;
+}
+
+body.edit_identity .col p {
+  margin: 0;
+}
+
+body.edit_identity .col a {
+  color: #05c;
+  padding: 1px;
+}
+
+body.edit_identity .col a:hover {
+  color: #fff;
+  background: #05c;
+  text-decoration: none;
+}
+
+body.edit_identity a.admin {
+  color: red;
+}
+
+body.edit_identity a.admin:hover {
+  color: white;
+  background: red;
+}
+
+body.edit_identity .container {
+  width: 850px;
+}
+
+body.edit_identity .Left,
+body.edit_identity table.layout td.left {
+  width: 60%;
+}
+
+body.edit_identity div.page_header h1 {
+  font-size: 14px;
+  margin: 0;
+}
+
+body.edit_identity label {
+  font-weight: normal;
+  color: #222;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+body.edit_identity tr.confirm_password label {
+  white-space: normal;  
+}
+
+body.edit_identity input {
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 3px;
+  width: 300px;
+}
+
+body.edit_identity table {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body.edit_identity table tr {
+  padding: 0;
+}
+
+body.edit_identity table p.hint {
+  font-size: 12px;
+  color: #999;
+}
+
+body.edit_identity table p.hint a {
+  color: #888;
+}
+
+body.edit_identity table p.hint a:hover {
+  color: #fff;
+  background: #666;
+}
+
+body.edit_identity table tr.submit td input {
+  width: auto;
+  font-size: 12px;
+  padding: 6px;
+  cursor:pointer;
+}
+
+body.edit_identity table tr.submit td {
+  padding-top: 6px;
+}
+
+body.edit_identity table td,
+body.edit_identity table th {
+  padding: 0;
+  color: #999;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+body.edit_identity table td {
+  padding-left: 10px;
+}
+
+body.edit_identity table tr th {
+  vertical-align: top;
+  padding-top: 10px;
+  min-width:65px;
+}
+
+body.edit_identity table tr.username_password td input {
+  width: 200px;
+}
+
+body.edit_identity table tr.avatar th {
+  padding: 0 0 18px 0;
+  text-align: right;
+}
+
+body.edit_identity table tr.avatar td {
+  vertical-align: top;
+  padding-top: 6px;
+}
+
+body.edit_identity table tr.with_tip td p {
+  font-size: 12px;
+}
+
+body.edit_identity tr.avatar th img {
+  background: #fff;
+  padding: 1px;
+  border: 1px solid #ddd;
+  height: 55px;
+  width: 55px;
+}
+
+body.edit_identity tr.avatar td input {
+  font-size: 12px;
+  font-weight: normal;
+  width: auto;
+}
+
+body.edit_identity tr.avatar td a {
+  font-size: 12px;
+}
+
+body.edit_identity tr.avatar td p {
+  margin: 0;
+}
+
+body.edit_identity table td strong {
+  color: #666;
+}
+
+body.edit_identity div.errors {
+  border: 2px solid red;
+  margin: 0 0 20px 0;
+  padding: 10px;
+}
+
+body.edit_identity div.errors h2{
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+
+body.edit_identity div.errors ul {
+  padding: 0 0 0 20px;
+}
+
+body.edit_identity div.errors li {
+  list-style-type: square;
+  color: #333;
+}
+
+body.edit_identity input.dummy[data-dummy=true] {
+  color: #888;
+}
+
+/* IE */ 
+
+*:first-child+html body.identity_validation div.validated_field,
+*:first-child+html body.identity_validation table div.validated_field,
+*:first-child+html body.identity_validation div.validated_field p.field {
+  display: inline;
+}
+
+
+*:first-child+html body.identity_validation div.validated_field,
+*:first-child+html body.identity_validation table div.validated_field {
+  margin-top: -3px;  
+  padding-right: 0;
+}
+
+html > body.edit_only {
+  background: #f7f7f7 ;
+  height: 100%;
+}
+
+html > body.edit_only div.page_header h2{
+  color: #7D7A75;
+}
+
+html > body.edit_only div.panel{
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+          box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+div#container {
+  margin: 0 auto;
+  width: 510px;
+  text-align: center;
+}
+div#main {
+  width: 500px;
+}
+
+div.page_header {
+  padding-top: 6px;
+}
+
+div.page_header h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #888;
+  margin: 0 -25px 15px;
+  padding: 0 25px 14px;
+  border-bottom: 1px solid #ddd;
+}
+div.panel {
+  margin: 10px 0 25px;
+  background: #fff;
+  padding: 15px 25px 25px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  -moz-box-shadow: 0 0 6px #999; /* firefox 3.5+ */
+  -webkit-box-shadow: 0 0 6px #999; /* webkit */
+  box-shadow: 0 0 6px #999;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999')"; /* IE 8+ */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999'); /* IE < = 7 */
+}
+
+body:first-of-type div.panel {border: none;}
+/*-------------------------------------------------
+Clearfix
+-------------------------------------------------*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+.clearfix {display: block;}

@@ -1,0 +1,432 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent
+}
+body {
+	font-size:14px;
+}
+img,object,embed {
+	max-width:100%
+}
+span.time,span.time
+{
+	font-size:12px;
+	color:#aaa;
+}
+
+div.discussion_content
+{
+	padding:10px 10px 0;
+	color:#666;
+}
+
+div#discussion_page_refresh
+,div#todos_page_refresh
+,div#attachment_page_refresh
+,div#document_page_refresh
+,div#todoslist_page_refresh
+{
+	height:50px;
+	padding-top:0px;
+	color:gray;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+}
+
+div#notice_page_refresh,div#pm_page_refresh
+{
+	display:none;
+}
+
+div#discussion_page_more,div#document_page_more,div#attachment_page_more
+{
+	padding-top:30px;
+	color:gray;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+li.todo_item
+{
+	font-size:14px;
+	cursor:pointer;
+}
+
+li.todo_item label
+{
+	cursor:pointer;
+}
+
+li.checked label
+{
+	color:gray;
+	text-decoration:line-through;
+}
+
+li.contact_item
+{
+	font-size:14px;
+}
+
+div.contact_content
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	
+	font-size: 12px;
+}
+
+div.contact_content img
+{
+	margin-left:3px;
+	margin-right:3px;
+}
+
+div.contact_content span
+{
+	color:gray;
+}
+
+div#contact_content_text div
+{
+	height:30px;
+}
+
+ul#notice_list_ul,ul#pm_list_ul
+{
+	display:none;
+}
+
+ul.localnav
+{
+	display:inline;
+}
+
+ul.localnav li
+{
+	float:left;
+}
+
+div#message_center_list
+{
+	padding-top:20px;
+}
+
+span.cspan
+{
+	display:none;
+	color:red;
+}
+
+div#wrapper,div#scroller
+{
+	border:1px solid red;
+	margin:0px;
+}
+
+div#icontent
+{
+	overflow:auto;
+}
+
+ul#todo_list_ul,ul#contact_list_ul,ul#pm_list_ul,ul#notice_list_ul
+{
+	padding-bottom:30px;
+}
+
+
+.formatted_content{
+	max-width:none !important;
+	page-break-inside:avoid
+	font-family:monaco,monospace;
+	white-space:pre;
+	white-space:pre-wrap;
+	white-space:pre-line;
+	word-wrap:break-word
+}
+.formatted_content ul,.formatted_content ol{
+	margin:0;
+}
+.formatted_content ul li,.formatted_content ol li {
+	display:list-item;
+	margin:5px 0
+}
+.formatted_content ul li{
+	list-style-type:square
+}
+.formatted_content p,.formatted_content div,.formatted_content ol,.formatted_content ul{
+	margin:0
+}
+.formatted_content a{
+	color:#477B96;
+	word-wrap:break-word
+}
+.m-input{display:block;width:95%;padding:8px 6px;border-radius:5px;background:#fff;-webkit-box-shadow:#ccc 0px 1px 2px inset;border:1px solid #b8b7b3;border-top-color:#8a8886;}
+
+/**
+ *
+ * Pull down styles
+ *
+ */
+#pullDown, #pullUp {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block; float:left;
+	width:40px; height:40px;
+	background:url(images/pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px; background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+
+
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 33.33333333%; }
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+.gallery li img { display: block; width: 100%; height: auto; }
+#Gallery1 .ui-content, #Gallery2 .ui-content { overflow: hidden; }
+
+#image_enlarger {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	z-index:1002;
+	font-family:"Lucida Grande","Segoe UI",helvetica,sans-serif
+}
+#image_enlarger button.close {
+	height:24px;
+	width:24px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	border:0px;
+	padding:0px;
+	margin:0px;
+	background:url(images/close.png)
+}
+#image_enlarger>figure {
+	position:absolute;
+	top:40px;
+	left:20px;
+	right:20px;
+	bottom:70px
+}
+#image_enlarger.with_nav>figure {
+	top:40px;
+	bottom:180px
+}
+#image_enlarger>figure>div.table_wrapper {
+	position:relative;
+	display:table;
+	width:100%;
+	height:100%
+}
+#image_enlarger>figure>div.table_wrapper>div.cell_wrapper {
+	width:100%;
+	height:100%;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle
+}
+#image_enlarger>figure img {
+	background:#666;
+	background-size:cover
+}
+#image_enlarger>figure figcaption {
+	text-align:center;
+	padding-top:20px;
+	position:absolute;
+	width:100%;
+	color:white;
+	font-size:16px;
+	line-height:20px
+}
+#image_enlarger>figure figcaption a.download {
+	text-decoration:none;
+	background-color:#262626;
+	border:1px solid #999;
+	border-radius:20px;
+	line-height:1em;
+	padding:5px 14px 6px;
+	color:#bfbfbf;
+	font-size:12px;
+	display:inline-block;
+	margin:-1px;
+	margin-left:5px;
+	position:relative;
+	top:-1px
+}
+#image_enlarger nav {
+	position:fixed;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	text-align:center;
+	height:100px
+}
+#image_enlarger nav>div.images {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:50px;
+	right:50px;
+	overflow:hidden;
+	border:0 solid #666
+}
+#image_enlarger nav>div.images.scrolling {
+	border-left-width:1px;
+	border-right-width:1px
+}
+#image_enlarger nav>div.images table {
+	margin:0px auto;
+	border-spacing:0px;
+	position:relative;
+	left:0px
+}
+#image_enlarger nav>div.images td {
+	height:100px;
+	padding:0px 10px;
+	vertical-align:middle
+}
+#image_enlarger nav>div.images td:first-child {
+	padding-left:20px
+}
+#image_enlarger nav>div.images td:last-child {
+	padding-right:20px
+}
+#image_enlarger nav>div.images td img {
+	display:block;
+	max-height:70px;
+	max-width:70px;
+	border:1px solid rgba(255,255,255,0.2);
+	cursor:pointer
+}
+#image_enlarger nav>div.images td img.activated {
+	border:4px solid #FF6;
+	padding:1px;
+	margin:-4px
+}
+#image_enlarger nav button.arrow {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	width:50px;
+	margin:0;
+	border:0;
+	padding:0;
+	background:url(images/arrows.png) no-repeat;
+	opacity:0.4
+}
+#image_enlarger nav button.arrow:active,#image_enlarger nav button.arrow.active {
+	opacity:0.6
+}
+#image_enlarger nav button.arrow[disabled] {
+	opacity:0;
+	cursor:default
+}
+#image_enlarger nav button.arrow.right {
+	right:0px;
+	background-position:-50px 35px
+}
+#image_enlarger nav button.arrow.left {
+	left:0px;
+	background-position:0px 35px
+}
+#shade {
+	-moz-transition-property:visibility,background;
+	-moz-transition-duration:300ms;
+	-moz-transition-delay:300ms,0;
+	-webkit-transition-property:visibility,background;
+	-webkit-transition-duration:0,300ms;
+	-webkit-transition-delay:300ms,0;
+	visibility:hidden;
+	background:rgba(0,0,0,0);
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:1001
+}
+html.shaded #shade {
+	-moz-transition-delay:0;
+	-webkit-transition-delay:0;
+	visibility:visible;
+	background:rgba(0,0,0,0.85)
+}
+
+ul.attachments {
+	padding:0;
+	display:block;
+	list-style:none;
+	font-size:12px;
+}
+ul.attachments a {
+	text-decoration:none
+}
+ul.attachments>li{
+	padding-left:35px;
+	margin-bottom:5px;
+	margin-top:-8px;
+	display:block;
+	float:left;
+	width:100%;
+}
+ul.attachments>li img.file_icon{
+	border:none;
+	background-color:none;
+	text-decoration:none;
+	float:left;
+	margin-left:-40px;
+	vertical-align:top;
+	margin-top:12px
+}

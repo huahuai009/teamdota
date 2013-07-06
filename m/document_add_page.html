@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Teamdota</title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+<link rel="stylesheet" href="teamdotamob.css" />
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery.mobile-1.0b3.js"></script>
+<script src="teamdotamob.js"></script>
+<script src="jquery.tmpl.js"></script>
+<script src="phonegap.js"></script>
+<script src="statusbarnotification.js"></script>
+<style>
+/*
+.ui-page 
+{
+	-webkit-backface-visibility: hidden;
+} 
+*/
+</style>
+</head> 
+<body> 
+<div data-role="page" id="document_add_page">
+<div data-role="header" data-theme="b">
+    <h1 id="document_add_page_title"></h1>
+	<a href="javascript:goto('document_list' , 1 );void(0);" data-icon="arrow-l">取消</a>
+</div>
+<div data-role="content">
+	<form id="addform">
+		<div data-role="fieldcontain">
+			<p>添加文档</p>
+			<input id="subject" name="subject" class="m-input"  maxLength="80"  placeholder="标题..." style="margin-bottom:20px;" />
+			<textarea name="message" id="message" class="m-input" placeholder="内容..." ></textarea>
+			<a href="javascript:add_document();void(0)" data-role="button" data-theme="e">保存</a>
+		</div>
+	</form>
+</div>
+<script>
+$('#document_add_page').live( 'pagebeforeshow',function(event)
+{
+	$('#document_add_page_title').html( window.localStorage.getItem( 'pname' ) );
+});</script>
+</div>
+</body>
+</html>
